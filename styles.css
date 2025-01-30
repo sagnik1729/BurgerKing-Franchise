@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ff6f00;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu h2 {
+    margin-bottom: 10px;
+}
+
+.food-options label {
+    display: block;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    font-size: 18px;
+    color: #ff6f00;
+    margin-top: 20px;
+}
+
+#orderDisplay {
+    margin-top: 20px;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+#foodImages img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#orderID {
+    position: absolute;
+    top: -30px;  /* Move it higher */
+    right: 10px;
+    background-color: #ff6f00;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}

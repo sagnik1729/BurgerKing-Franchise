@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Virtual Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Burger King</h1>
+        </header>
+        <main>
+            <section class="menu">
+                <h2>Menu</h2>
+                <div class="food-options">
+                    <label><input type="checkbox" value="Burger" data-image="burger.jpeg"> Burger</label>
+                    <label><input type="checkbox" value="Fries" data-image="fries.jpeg"> Fries</label>
+                    <label><input type="checkbox" value="Coke" data-image="coke.jpeg"> Coke</label>
+                    <label><input type="checkbox" value="Ice Cream" data-image="icecream.jpeg"> Ice Cream</label>
+                </div>
+                <button id="orderButton">Order Food</button>
+            </section>
+            <div id="loading" class="hidden">Preparing your food...</div>
+            <div id="orderDisplay" class="hidden">
+                <div id="foodImages"></div>
+                <div id="orderID"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Ding Sound -->
+    <audio id="dingSound" src="ding.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
